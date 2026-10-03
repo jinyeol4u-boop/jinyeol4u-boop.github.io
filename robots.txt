@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://welfare.journal5188.com/sitemap.xml
