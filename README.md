@@ -11,7 +11,7 @@
 
 ## 업데이트
 
-제도 변경 시 `data/benefits.json`의 제도 설명, 출처, `last_verified_at`을 함께 갱신하고, 해당 상세 경로 HTML도 다시 생성해야 합니다. 현재 배포 파일은 원래 Cloudflare 프로젝트의 `scripts/build-github-pages.mjs`로 재생성할 수 있습니다.
+제도 변경 시 `data/benefits.json`의 제도 설명, 출처, `last_verified_at`을 함께 갱신합니다. 검색 결과에 표시되는 상세 정보는 `benefits/<번호>/index.html`에도 있으므로, 내용 변경 후에는 해당 상세 페이지와 `sitemap.xml`을 함께 점검합니다.
 
 ## GitHub Pages
 
