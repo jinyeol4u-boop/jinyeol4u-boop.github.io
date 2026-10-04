@@ -312,3 +312,15 @@ legend { font-size: clamp(30px, 4vw, 42px); line-height: 1.35; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+
+.footer-bottom.footer-bottom-policy { display: grid; grid-template-columns: max-content minmax(0, 1fr); align-items: start; gap: 6px 28px; }
+.footer-bottom-policy p { margin: 0; }
+.footer-bottom-policy .footer-source, .footer-bottom-policy .footer-disclaimer { grid-column: 2; }
+.footer-bottom-policy .footer-source { color: #d9e7f5; }
+.footer-bottom-policy .footer-source strong { margin-right: 8px; color: #58a9f0; letter-spacing: .08em; }
+.footer-bottom-policy .footer-disclaimer { color: #9fb5cc; }
+@media (max-width: 760px) {
+  .footer-bottom.footer-bottom-policy { grid-template-columns: 1fr; gap: 8px; }
+  .footer-bottom-policy .footer-source, .footer-bottom-policy .footer-disclaimer { grid-column: auto; }
+}
